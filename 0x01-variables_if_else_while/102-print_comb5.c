@@ -1,28 +1,29 @@
 #include <stdio.h>
 /**
- * main - entry point
+ * main - Entry point
+ * Return: Always 0
  */
 int main(void)
 {
-	int a, b, c;
+	int num1, num2;
 
-for (a = 0; a < 8; a++)
-{
-	for (b = a + 1; b < 9; b++)
+
+	for (num1 = 0; num1 <= 98; num1++)
 	{
-		for (c = b + 1; c < 10; c++)
+		for (num2 = num1 + 1; num2 <= 99; num2++)
 		{
-		       putchar((a % 10) + '0');
-		putchar((b % 10) + '0');
-		putchar((c % 10) + '0');
-		if (a == 7 && b == 8 && c == 9)
-			continue;
-		putchar(',');
-		putchar(' ');
+			putchar((num1 / 10) + '0');
+			putchar((num1 % 10) + '0');
+			putchar(' ');
+			putchar((num2 / 10) + '0');
+			putchar((num2 % 10) + '0');
+			if (num1 == 98 && num2 == 99)
+				continue;
+			putchar(',');
+			putchar(' ');
 		}
 	}
-}
-putchar('\n');
+	putchar('\n');
 
-return (0);
+	return (0);
 }
