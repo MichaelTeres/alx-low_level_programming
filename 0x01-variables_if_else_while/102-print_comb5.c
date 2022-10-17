@@ -4,7 +4,7 @@
  */
 int main(void)
 {
-int a, b, c;
+	int a, b, c;
 
 for (a = 0; a < 8; a++)
 {
@@ -22,5 +22,7 @@ for (a = 0; a < 8; a++)
 		}
 	}
 }
+putchar('\n');
+
 return (0);
 }
