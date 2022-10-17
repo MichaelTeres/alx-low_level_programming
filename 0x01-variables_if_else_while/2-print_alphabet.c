@@ -8,8 +8,8 @@
  */
 int main(void)
 {
-char lowerCase;
-for (lowerCase = 'a'; lowerCase <= 'z'; lowerCase++)
+char lowercase;
+for (lowercase = 'a'; lowercase <= 'z'; lowercase++)
 putchar(low);
 putchar ('\n');
 return (0);
