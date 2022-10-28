@@ -1,22 +1,17 @@
 #include "main.h"
-#include <stddef.h>
 
 /**
  * _strncpy - A function that concatenates two strings
  * @src: An input string
  * @dest: An input string
+ * @n: No of bytes to copy
  * Return: A pointer to the resulting the string
  */
 
 char *_strncpy(char *dest, char *src, int n)
 {
-	if ((dest == NULL) &&(src == NULL))
-	{
-		return NULL;
-	}
-	
-	char* start = dest;
-	
+	char *start = dest;
+
 	while (*src && n--)
 	{
 		*dest = *src;
@@ -24,5 +19,5 @@ char *_strncpy(char *dest, char *src, int n)
 		src++;
 	}
 	*dest = '\0';
-	return start;
+	return (start);
 }
