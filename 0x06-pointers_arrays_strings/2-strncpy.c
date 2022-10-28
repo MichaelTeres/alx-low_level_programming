@@ -1,13 +1,20 @@
 #include "main.h"
 
 /**
- * *_strcpy -  a function that copies a string.
- * @dest - Destination
- * @src - Source
- * Return : Always 0
+ * _strcat - A function that concatenates two strings
+ * @src: An input string
+ * @dest: An input string
+ * Return: A pointer to the resulting the string
  */
 
-char *_strncpy(char *dest, char *src, int n)
+char *_strcat(char *dest, char *src)
 {
-	while (*dest++ = *src++);
+	char *temp = dest;
+
+	while (*dest)
+		dest++;
+	while (*src)
+		*dest++ = *src++;
+	*dest = '\0';
+	return (temp);
 }
