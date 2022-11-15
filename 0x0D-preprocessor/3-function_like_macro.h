@@ -2,6 +2,6 @@
 #define _MAIN_H_
 
 #include <stdio.h>
-#define ABS(x)
+#define ABS(abs(x))
 
 #endif
