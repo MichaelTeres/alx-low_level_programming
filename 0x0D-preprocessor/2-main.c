@@ -1,22 +1,15 @@
 #include <stdio.h>
-#include <stdlib.h>
+#define _FILE_
 
 /**
- * main - A program that print the name of a file it was compiled from
- * @agrc: An input variable
- * @agrv: An input variable
+ * main - Entry point
  *
  * Return: Always 0
  */
 
-int _print_file_name(int agrc, char *agrv);
-
-int main()
+int main(void)
 {
-	_putchat();
+	printf("%s\n", __FILE__);
+
 	return (0);
 }
-
-int _print_file _name(int agrc, char *agrv)
-{
-
