@@ -5,7 +5,7 @@
 
 /**
  * sum_them_all - a function that returns the sum of all its parameters.
- *
+ * @n: input variable
  * Return:Alway return Sum
  */
 
