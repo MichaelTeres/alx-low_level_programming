@@ -12,9 +12,11 @@
 int sum_them_all(const unsigned int n, ...)
 {
 	unsigned int i;
+
 	int Sum = 0;
 
 	va_list ptr;
+
 	if (n == 0)
 	{
 		return (0);
